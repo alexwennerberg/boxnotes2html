@@ -27,7 +27,7 @@ Requires Python 3. Tested on >=3.5
 
 To convert a file:
 
-`boxnotes2html -h mynote.boxnote`
+`boxnotes2html mynote.boxnote`
 
 Will create a file called mynote. You can optionally specify the filetype with `-f`, current options, in order to most to least reliable, html, md (markdown), and txt (plaintext)
 
