@@ -1,0 +1,3 @@
+include boxnotes2html/style.css
+include LICENSE
+include readme.md
