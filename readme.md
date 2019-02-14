@@ -68,7 +68,7 @@ If this tool is unsatisfactory to your needs, please contact Box and tell them t
 
 # Technical summary
 
-Box notes are formatting as a JSON. They include a bunch of text and metadata. Some of this metadata is in a long "attributes" string. This string encoded various styles to different properties, using base36 numbers. This formatting is HTML-like but not exactly HTML. Check out the code for more details. Feel free to contact me on GitHub or email me with any questions on feedback: alex@alexwennerberg.com
+Box notes are formatting as a JSON. They include a bunch of text and metadata. Some of this metadata is in a long "attributes" string. This string encoded various styles to different properties, using base36 numbers. This formatting is HTML-like but not exactly HTML. Check out the code for more details. Feel free to contact me on GitHub or email me with any questions on feedback: alex@alexwennerberg.com If you use this library, I would love to know what your experience is, positive or negative.
 
 Thanks, and enjoy!
 
