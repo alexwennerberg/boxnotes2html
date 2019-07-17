@@ -5,7 +5,7 @@ with open("readme.md", "r") as fh:
 
 setup(
     name="boxnotes2html",
-    version="0.1.2",
+    version="0.1.3",
     author="Alex Wennerberg",
     author_email="alex@alexwennerberg.com",
     description="Converting from Box Notes to HTML",
