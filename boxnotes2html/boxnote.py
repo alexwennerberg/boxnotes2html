@@ -151,7 +151,7 @@ class BoxNote:
 
     @classmethod
     def from_file(cls, filepath):
-        with open(filepath) as f:
+        with open(filepath, encoding="utf8") as f:
             return cls(note_string=f.read())
 
     def get_metadata(self):
