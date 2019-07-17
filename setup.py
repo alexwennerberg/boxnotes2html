@@ -10,6 +10,7 @@ setup(
     author_email="alex@alexwennerberg.com",
     description="Converting from Box Notes to HTML",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/alexwennerberg/boxnotes2html",
     packages=find_packages(),
     install_requires=[],
