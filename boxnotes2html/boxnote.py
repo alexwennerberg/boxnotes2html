@@ -1,9 +1,10 @@
-from functools import reduce
 import json
-import re
-from . import html, markdown
-from xml.etree import ElementTree as ET
 import os
+import re
+from functools import reduce
+from xml.etree import ElementTree as ET
+
+from . import html, markdown
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 

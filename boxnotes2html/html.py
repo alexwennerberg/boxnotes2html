@@ -1,9 +1,7 @@
+import base64
 import json
 import urllib.parse
-import base64
-
 from collections import namedtuple
-
 
 HTMLTag = namedtuple("HTMLTag", ["tag", "attributes"])
 

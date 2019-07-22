@@ -1,4 +1,5 @@
 from unittest.mock import patch
+
 from boxnotes2html import cli
 
 

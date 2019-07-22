@@ -1,6 +1,7 @@
-import sys
-import os
 import argparse
+import os
+import sys
+
 from boxnotes2html.boxnote import BoxNote
 
 

@@ -1,6 +1,8 @@
 import os
+
 import pytest
-from boxnotes2html.boxnote import BoxNote, AttributeChunk
+
+from boxnotes2html.boxnote import AttributeChunk, BoxNote
 
 here = os.path.dirname(__file__)
 simple_note_path = "simple_note.boxnote"
@@ -33,4 +35,3 @@ def complex_note():
 @pytest.fixture()
 def simple_attribute():
     return AttributeChunk("*1*4*10+2|1+1")
-
