@@ -187,7 +187,6 @@ class BoxNote:
     def as_element_tree(self):
         html_result = ET.Element("html")
         body = ET.SubElement(html_result, "body")
-        table = ET.Element("table")  # only one for now WIP
         blobs = self._get_formatted_text_list()
         for blob in blobs:
             body.append(blob.element_tree)
