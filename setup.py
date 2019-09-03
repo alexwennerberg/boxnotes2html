@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-with open("readme.md", "r") as fh:
+with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
@@ -8,7 +8,7 @@ setup(
     version="0.1.3",
     author="Alex Wennerberg",
     author_email="alex@alexwennerberg.com",
-    description="Converting from Box Notes to HTML",
+    description="Converting from Box Notes to HTML or other formats",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/alexwennerberg/boxnotes2html",

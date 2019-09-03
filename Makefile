@@ -1,31 +1,6 @@
 .PHONY: clean clean-test clean-pyc clean-build docs help
 .DEFAULT_GOAL := help
 
-define BROWSER_PYSCRIPT
-import os, webbrowser, sys
-
-try:
-	from urllib import pathname2url
-except:
-	from urllib.request import pathname2url
-
-webbrowser.open("file://" + pathname2url(os.path.abspath(sys.argv[1])))
-endef
-export BROWSER_PYSCRIPT
-
-define PRINT_HELP_PYSCRIPT
-import re, sys
-
-for line in sys.stdin:
-	match = re.match(r'^([a-zA-Z_-]+):.*?## (.*)$$', line)
-	if match:
-		target, help = match.groups()
-		print("%-20s %s" % (target, help))
-endef
-export PRINT_HELP_PYSCRIPT
-
-BROWSER := python -c "$$BROWSER_PYSCRIPT"
-
 help:
 	@python -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
 
@@ -53,36 +28,11 @@ clean-test: ## remove test and coverage artifacts
 	rm -rf tests/fixtures/*md
 	rm -rf tests/fixtures/*html
 
-lint: ## check style with flake8
-	flake8 boxnotes2html tests
-
-black:
-	black boxnotes2html
-
-test: ## run tests quickly with the default Python
+test: clean-test ## run tests quickly with the default Python
 	python3 setup.py test
-
-integration_test: ## run integration tests, which may be slower
 
 test-all: ## run tests on every Python version with tox
 	tox
-
-coverage: ## check code coverage quickly with the default Python
-	coverage run --source boxnotes2html -m pytest
-	coverage report -m
-	coverage html
-	$(BROWSER) htmlcov/index.html
-
-docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/boxnotes2html.rst
-	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ boxnotes2html
-	$(MAKE) -C docs clean
-	$(MAKE) -C docs html
-	$(BROWSER) docs/_build/html/index.html
-
-servedocs: docs ## compile the docs watching for changes
-	watchmedo shell-command -p '*.rst' -c '$(MAKE) -C docs html' -R -D .
 
 release: dist ## package and upload a release
 	twine upload dist/*

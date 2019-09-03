@@ -1,5 +1,0 @@
-pytest
-tox
-bumpversion
-wheel
-twine
