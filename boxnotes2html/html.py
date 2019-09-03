@@ -1,3 +1,6 @@
+"""
+Some helper functions for converting box attributes to HTML
+"""
 import base64
 import json
 import urllib.parse

@@ -1,3 +1,6 @@
+"""
+Command line interface for boxnotes2html
+"""
 import argparse
 import os
 import sys

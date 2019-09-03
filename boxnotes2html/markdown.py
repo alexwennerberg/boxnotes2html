@@ -1,4 +1,6 @@
-# Tools for markdown conversion
+"""
+Tools for converting Box Notes to Markdown
+"""
 from . import html
 
 

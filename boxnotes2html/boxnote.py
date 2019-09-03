@@ -1,3 +1,6 @@
+"""
+The primary module for processing and parsing Box Notes
+"""
 import json
 import os
 import re
