@@ -76,4 +76,4 @@ If this tool is unsatisfactory to your needs, please contact Box and tell them t
 
 ## Feedback
 
-Feel free to contact me on GitHub or email me with any questions or feedback: alex@alexwennerberg.com If you use this library, I would love to know what your experience is, positive or negative. Thanks, and enjoy!
+Feel free to contact me on GitHub or email me with any questions or feedback: alex@alexwennerberg.com If you use this library, I would love to know what your experience is, positive or negative. I do maintain this, so feel free to make feature requests or bug reports. Thanks, and enjoy!
