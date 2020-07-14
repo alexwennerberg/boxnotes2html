@@ -70,6 +70,7 @@ Caveats:
 * Tables are broken and will just be converted to plaintext. If you can figure out a clean way to do this, please submit a pull request.
 * Images are just a link to the image in Box, converting them would require API access.
 * Comments and annotations are not saved.
+* Document history is not preserved
 * This tool is in ALPHA, bugs may exist. Please report any issues you encounter!
 
 If this tool is unsatisfactory to your needs, please contact Box and tell them to build this much-needed feature!
