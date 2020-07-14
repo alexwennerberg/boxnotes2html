@@ -117,13 +117,21 @@ class FormattedText:
             for character in characters_to_escape:
                 tmp = tmp.replace(character, "\\{}".format(character))
             for line in tmp.split("\n"):
+                _prefix = ""
+                
                 for box_attribute in self.attributes:
                     if line or box_attribute[0] in ["list", "image", "link"]:
-                        start, end = markdown.convert_simple_element_to_markdown(
+                        start, end, prefix = markdown.convert_simple_element_to_markdown(
                             box_attribute
                         )
-                        line = start + line + end
-                out_text += line
+                        if prefix:
+                            # Hacky solution to ensure headers always appear at the start of the line
+                            _prefix += start
+                            line = line + end
+                        else:
+                            line = start + line + end
+                            
+                out_text += _prefix + line
             out_text += "\n" * (self.num_linebreaks)
 
         return out_text
