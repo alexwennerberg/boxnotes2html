@@ -63,9 +63,10 @@ The HTML formatted by this tool is pretty ugly -- that may not be important for 
 Functioning:
 * Text formatting (bold, underline, colors, size, etc)
 * Hyperlinks
+* Ordered, unordered, checked and unchecked lists are supported in Markdown (using Github flavoured check/uncheck syntax).
 
 Caveats:
-* Lists are a little wonky -- they are just stars with spcaes instead of HTML tags. A TBD if there is interest.
+* HTML lists don't supported nesting
 * Tables are broken and will just be converted to plaintext. If you can figure out a clean way to do this, please submit a pull request.
 * Images are just a link to the image in Box, converting them would require API access.
 * Comments and annotations are not saved.

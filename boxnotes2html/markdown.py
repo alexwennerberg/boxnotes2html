@@ -28,6 +28,16 @@ def convert_simple_element_to_markdown(box_attribute):
         start = "!["
         end = "]({})".format(html._decode_image(attribute_type).get("boxSharedLink"))
     elif attribute_type == "list":
-        _, level = html.get_list_info(box_attribute)
-        start = "  " * (level - 1) + "* "
+        kind, level = html.get_list_info(box_attribute)
+        if kind == 'ordered':
+            formatter = '1. '
+        elif kind == 'unordered':
+            formatter = '* '
+        elif kind == 'unchecked':
+            formatter = '* [ ] '
+        elif kind == 'checked':
+            formatter = '* [x] '
+        else:
+            formatter = '* '
+        start = "  " * (level - 1) + formatter
     return start, end
