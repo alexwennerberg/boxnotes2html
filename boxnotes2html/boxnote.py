@@ -7,7 +7,10 @@ import re
 from functools import reduce
 from xml.etree import ElementTree as ET
 
+import typing
+
 from . import html, markdown
+from .table import Table
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -68,10 +71,19 @@ class FormattedText:
         return tags
 
     def get_table_info(self):
+        table_id = row_id = column_id = None
         for box_attribute in self.attributes:
             if html.get_table_info(box_attribute)[0]:
-                return html.get_table_info(box_attribute)
-        return None, None, None
+                table = html.get_table_info(box_attribute)
+                if table_id and table[0] != table_id:
+                    raise NotImplementedError(f"Encountered table id {table[0]} but was expecting {table_id}")
+
+                table_id = table[0]
+                if table[1]:
+                    row_id = table[1]
+                if table[2]:
+                    column_id = table[2]
+        return table_id, row_id, column_id
 
     def get_list_info(self):  # refactor
         for box_attribute in self.attributes:
@@ -212,11 +224,90 @@ class BoxNote:
         return css + body
 
     def as_markdown(self):
-        out = ""
+        """
+        Return this note as markdown.
+        
+        ## Notes about tables
+        
+        1. A new row starts with start with `struct-table[hash]_col[hash]` and then `struct-table[hash]_row[hash]`.
+        2. The continuation of a row can be identified by `struct-table[hash]_row[hash]` and then `struct-table[hash]_col[hash]`
+        3. The FormattedText that appears directly before a `struct-table[hash]_col|row[hash]` contains the content for
+           the cell.
+        4. There doesn't appear to be an indication of a header row
+        5. There can be multiple blobs of data before the `struct-table[hash]_col|row[hash]` and therefore you need to
+           capture this data so that it can be inserted into a table cell.
+        6. BUT... there doesn't seem to be any indication that a table has finished. In some cases the last table cell
+           will contain a \n\n but not always.
+           Thus, this is why in this method we add the data to the stack, but then if we detect there is a table cell
+           that hasn't been filled, we fill it with any data since the previously encountered table cell.
+        """
+        
+        #: A dict of data that makes up the box note.
+        #
+        # The key will either be;
+        #     1. An integer derived from the index of blobs; or
+        #     2. A string that references a table_id derived from the Box Note attribute
+        #        `struct-table[table-id]_col|row[hash]`
+        out: typing.Dict[typing.Union[int, str], typing.Union[str, Table]] = {}
+        
+        #: A list of blob indexes that are captured so they can be placed within a table cell upon discovery.
+        captures: typing.List[int] = []
+        
         blobs = self._get_formatted_text_list()
-        for blob in blobs:
-            out += blob.styles_to_markdown_string()
-        return out
+        
+        for i, blob in enumerate(blobs):
+            if blob.table_id:
+                # This blob contains reference to a table
+                #
+                # Some previously captured data forms the data that will be placed within this particular table cell.
+                
+                if blob.table_id not in out:
+                    # This is the first time we've come across this table, so creat an instance of Table in which
+                    # we can start to place data in.
+                    out[blob.table_id] = Table()
+                
+                # Combine any text previously captured together.
+                data = ''.join([
+                    out.pop(capture)
+                    for capture in captures
+                ])
+                
+                if len(data) > 0:
+                    # Add the previously captured data to the table
+                    #
+                    # Table relies on a dictionary (which now honours the insertion order) to ensure that this data
+                    # will be in the correct row/column and that that row/column is rendered in the correct place
+                    # on output.
+                    out[blob.table_id].add_data(blob.row_id, blob.column_id, data)
+
+                captures = []
+
+            else:
+                if blob.num_linebreaks == 0:
+                    # Capture a reference to this data in case it needs to be placed inside a table cell
+                    captures.append(i)
+                else:
+                    # We reset the capture when there is a line break.
+                    captures = []
+
+                out[i] = blob.styles_to_markdown_string()
+
+        doc = ''.join([
+            o.render_markdown() if hasattr(o, "render_markdown") else o
+            for o in out.values()
+        ])
+        
+        # TODO: Better support for cleaning up the doc
+        cleanup = (
+            # Box Notes can give you text in a table cell like `**H****ello**` - this is invalid Markdown and we want
+            # to convert it to `**Hello**`.
+            ('****', ''),
+        )
+        
+        for search, replace in cleanup:
+            doc = doc.replace(search, replace)
+            
+        return doc
 
     def as_text(self):
         return self.text

@@ -1,1 +1,137 @@
-{"head":117,"savepointDataFileId":"400025482140","savepointListObject":{"80":{"revisionId":80,"timestamp":1549845414056,"state":"saved","type":"session","diffAuthorList":{"3960991723":true}}},"lastEditTimestamp":1549846860417,"diffChangeset":"Z:3i5<2nq*4*9|1-8*4*e*5*f+6|1=1=14*4*k*4=b=7s*4*9|4-11n|1=1*4*8=1*4*9-6|1=2s*4*8=1=17*4*9-1k|1=1*4*c=1=13*4*e*4=t|1=w*4*d=1=46*4*l*4=w|1=e*4*c=1|1=31*4*d=1|1=2y*4*j=1=1i*4*9|7-193*4*9-b8|4=f*4*m*4=1$HEADER","invalidDiffChangeset":false,"authorList":{"3960991723":{"authorName":"Alex Wennerberg","authorCustomAvatarUrl":"/users/3960991723/avatar"}},"diffAuthorList":{"3960991723":true},"shouldCreateSavepointBeforeApplyingNextRevision":false,"firstKeyRevision":5,"atext":{"text":"HEADER\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in lorem est. Nunc ac lectus eget nibh iaculis hendrerit vitae in lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi consectetur nunc leo, id sollicitudin nibh blandit a. Donec euismod mollis nisl quis vehicula. Donec \n*ex maximus tortor, ac convallis nisl lorem laoreet nisi. Sed ullamcorper purus porttitor convallis \n*eleifend. Vivamus venenatis vestibulum odio\n*Donec vehicula lacus ut nisi suscipit, sit amet cursus mauris varius. Aenean consectetur fermentum \n*metus, eu faucibus ex luctus eget. Sed consectetur metus sit amet nisl fermentum, in consectetur justvenenatis. Donec ipsum quam, tempor quis arcu a, tincidunt vehicula neque. Nullam eget ligula \n*venenatis, sollicitudin neque non, iaculis ipsum. Phasellus eu nunc nec dui lobortis facilisis. Nullam quis \n*augue et massa consequat tincidunt. Vestibulum sit amet libero augue. Praesent condimentum sed ligula eu \n*viverra. Praesent bibendum dapibus erat vitae posuere.\n\nTO DO\n*lorem\n*ipsum\n*lorem2\n*impsum2\n\n","attribs":"*4*e*5*f+6*4|1+1*4+14*4*k+b*4|1+7t*4*2*7*3*8+1*4*b*6+2r*4|1+1*4*2*a*3*8+1*4*b*6+17*4|1+1*4*2*a*3*c+1*4*b*6+13*4*e*b*6+t*4*b*6+v*4|1+1*4*2*a*3*d+1*4*b*6+46*4*b*6*l+w*4*b*6+d*4|1+1*4*2*7*3*c+1*4*b*6+30*4|1+1*4*2*7*3*d+1*4*b*6+2x*4|1+1*4*2*7*3*j+1*4*b*6+1i*4|2+2*4*5*f+5|1+1*4*2*i*3+1*4*5*6+5*4|1+1*4*2*m*3+1*4*5*6+5*4|1+1*4*2*i*3+1*4*5*6+6*4|1+1*4*2*i*3+1*4*5*6+7|2+2","opCount":44,"appliedAttribsCount":120,"maxAttribsOnSingleOp":5},"pool":{"numToAttrib":{"0":["author","a.4fz9s4pIrvcRKF5l"],"1":["align","left"],"2":["insertorder","first"],"3":["lmkr","1"],"4":["author","3960991723"],"5":["font-color-000000","true"],"6":["font-size-medium","true"],"7":["list","number1"],"8":["start","1"],"9":["removed","true"],"10":["list","number2"],"11":["font-color-222222","true"],"12":["start","2"],"13":["start","3"],"14":["bold","true"],"15":["font-size-large","true"],"16":["font-size-medium",""],"17":["link-MTU0OTg0NTM4NDI5MC1nb29nbGUuY29t","true"],"18":["list","unchecked1"],"19":["start","4"],"20":["link-MTU0OTg0NjgyMTM3MC1nb29nbGUuY29t","true"],"21":["italic","true"],"22":["list","checked1"]},"nextNum":23},"chatHead":-1,"publicStatus":false,"passwordHash":null,"savedRevisions":[]}
+{
+  "head": 117,
+  "savepointDataFileId": "400025482140",
+  "savepointListObject": {
+    "80": {
+      "revisionId": 80,
+      "timestamp": 1549845414056,
+      "state": "saved",
+      "type": "session",
+      "diffAuthorList": {
+        "3960991723": true
+      }
+    }
+  },
+  "lastEditTimestamp": 1549846860417,
+  "diffChangeset": "Z:3i5<2nq*4*9|1-8*4*e*5*f+6|1=1=14*4*k*4=b=7s*4*9|4-11n|1=1*4*8=1*4*9-6|1=2s*4*8=1=17*4*9-1k|1=1*4*c=1=13*4*e*4=t|1=w*4*d=1=46*4*l*4=w|1=e*4*c=1|1=31*4*d=1|1=2y*4*j=1=1i*4*9|7-193*4*9-b8|4=f*4*m*4=1$HEADER",
+  "invalidDiffChangeset": false,
+  "authorList": {
+    "3960991723": {
+      "authorName": "Alex Wennerberg",
+      "authorCustomAvatarUrl": "/users/3960991723/avatar"
+    }
+  },
+  "diffAuthorList": {
+    "3960991723": true
+  },
+  "shouldCreateSavepointBeforeApplyingNextRevision": false,
+  "firstKeyRevision": 5,
+  "atext": {
+    "text": "HEADER\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in lorem est. Nunc ac lectus eget nibh iaculis hendrerit vitae in lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi consectetur nunc leo, id sollicitudin nibh blandit a. Donec euismod mollis nisl quis vehicula. Donec \n*ex maximus tortor, ac convallis nisl lorem laoreet nisi. Sed ullamcorper purus porttitor convallis \n*eleifend. Vivamus venenatis vestibulum odio\n*Donec vehicula lacus ut nisi suscipit, sit amet cursus mauris varius. Aenean consectetur fermentum \n*metus, eu faucibus ex luctus eget. Sed consectetur metus sit amet nisl fermentum, in consectetur justvenenatis. Donec ipsum quam, tempor quis arcu a, tincidunt vehicula neque. Nullam eget ligula \n*venenatis, sollicitudin neque non, iaculis ipsum. Phasellus eu nunc nec dui lobortis facilisis. Nullam quis \n*augue et massa consequat tincidunt. Vestibulum sit amet libero augue. Praesent condimentum sed ligula eu \n*viverra. Praesent bibendum dapibus erat vitae posuere.\n\nTO DO\n*lorem\n*ipsum\n*lorem2\n*impsum2\n\n",
+    "attribs": "*4*e*5*f+6*4|1+1*4+14*4*k+b*4|1+7t*4*2*7*3*8+1*4*b*6+2r*4|1+1*4*2*a*3*8+1*4*b*6+17*4|1+1*4*2*a*3*c+1*4*b*6+13*4*e*b*6+t*4*b*6+v*4|1+1*4*2*a*3*d+1*4*b*6+46*4*b*6*l+w*4*b*6+d*4|1+1*4*2*7*3*c+1*4*b*6+30*4|1+1*4*2*7*3*d+1*4*b*6+2x*4|1+1*4*2*7*3*j+1*4*b*6+1i*4|2+2*4*5*f+5|1+1*4*2*i*3+1*4*5*6+5*4|1+1*4*2*m*3+1*4*5*6+5*4|1+1*4*2*i*3+1*4*5*6+6*4|1+1*4*2*i*3+1*4*5*6+7|2+2",
+    "opCount": 44,
+    "appliedAttribsCount": 120,
+    "maxAttribsOnSingleOp": 5
+  },
+  "pool": {
+    "numToAttrib": {
+      "0": [
+        "author",
+        "a.4fz9s4pIrvcRKF5l"
+      ],
+      "1": [
+        "align",
+        "left"
+      ],
+      "2": [
+        "insertorder",
+        "first"
+      ],
+      "3": [
+        "lmkr",
+        "1"
+      ],
+      "4": [
+        "author",
+        "3960991723"
+      ],
+      "5": [
+        "font-color-000000",
+        "true"
+      ],
+      "6": [
+        "font-size-medium",
+        "true"
+      ],
+      "7": [
+        "list",
+        "number1"
+      ],
+      "8": [
+        "start",
+        "1"
+      ],
+      "9": [
+        "removed",
+        "true"
+      ],
+      "10": [
+        "list",
+        "number2"
+      ],
+      "11": [
+        "font-color-222222",
+        "true"
+      ],
+      "12": [
+        "start",
+        "2"
+      ],
+      "13": [
+        "start",
+        "3"
+      ],
+      "14": [
+        "bold",
+        "true"
+      ],
+      "15": [
+        "font-size-large",
+        "true"
+      ],
+      "16": [
+        "font-size-medium",
+        ""
+      ],
+      "17": [
+        "link-MTU0OTg0NTM4NDI5MC1nb29nbGUuY29t",
+        "true"
+      ],
+      "18": [
+        "list",
+        "unchecked1"
+      ],
+      "19": [
+        "start",
+        "4"
+      ],
+      "20": [
+        "link-MTU0OTg0NjgyMTM3MC1nb29nbGUuY29t",
+        "true"
+      ],
+      "21": [
+        "italic",
+        "true"
+      ],
+      "22": [
+        "list",
+        "checked1"
+      ]
+    },
+    "nextNum": 23
+  },
+  "chatHead": -1,
+  "publicStatus": false,
+  "passwordHash": null,
+  "savedRevisions": []
+}

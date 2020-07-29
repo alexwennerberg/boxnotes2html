@@ -64,14 +64,16 @@ Functioning:
 * Text formatting (bold, underline, colors, size, etc)
 * Hyperlinks
 * Ordered, unordered, checked and unchecked lists are supported in Markdown (using Github flavoured check/uncheck syntax).
+* Tables in Markdown
 
 Caveats:
 * HTML lists don't supported nesting
-* Tables are broken and will just be converted to plaintext. If you can figure out a clean way to do this, please submit a pull request.
+* HTML tables are broken however it should be possible to take the approach used for Markdown and apply it - PRs welcome.
 * Images are just a link to the image in Box, converting them would require API access.
 * Comments and annotations are not saved.
 * Document history is not preserved
 * This tool is in ALPHA, bugs may exist. Please report any issues you encounter!
+* Links to other Box notes are not changed in any way
 
 If this tool is unsatisfactory to your needs, please contact Box and tell them to build this much-needed feature!
 
