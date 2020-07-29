@@ -23,8 +23,11 @@ def convert_simple_element_to_markdown(box_attribute: (str, str)) -> (str, str, 
         start = end = ""
     elif attribute_type == "bold":
         start = end = "**"
-    elif attribute_type == "italic" or attribute_type == "underline":
+    elif attribute_type == "italic":
         start = end = "*"
+    elif attribute_type == "underline":
+        start = "<ins>"
+        end = "</ins>"
     elif attribute_type == "strikethrough":
         start = end = "~~"
     elif "font-size" in attribute_type:
