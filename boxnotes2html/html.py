@@ -34,13 +34,15 @@ def get_list_attribute(box_attribute):  # UNUSED
 def get_list_info(box_attribute):
     if "list" in box_attribute[0]:
         if box_attribute[1].startswith("number"):
-            type = "ordered"
+            kind = "ordered"
+        elif box_attribute[1].startswith("uncheck"):
+            kind = "unchecked"
         elif box_attribute[1].startswith("check"):
-            type = "checkbox"
+            kind = "checked"
         else:
-            type = "unordered"
+            kind = "unordered"
         # TODO: regex. cant do more than 9 list levels
-        return type, int(box_attribute[1][-1])
+        return kind, int(box_attribute[1][-1])
 
 
 def convert_simple_element_to_html_tag(box_attribute):

@@ -1,0 +1,99 @@
+{
+  "head": 7,
+  "savepointDataFileId": "694007942494",
+  "savepointListObject": {},
+  "lastEditTimestamp": 1595366506717,
+  "diffChangeset": "Z:1>1q*4|1+1*4*5*6*7+c*4*8*9|1+1*a*4*2*3+1*4*5*6*7+e*4*b*9|1+1*c*4*2*3+1*4*5*7+1*4*5*6*7+c*4*d*9|1+1*1*4*2*3+1*4*6*7+3*4*8*e|1+1*a*4*2*3+1*4*6*7+3*4*b*e|1+1*c*4*2*3+1*4*6*7+3*4*d*e|1+1*c*4*2*3+1|1+1$\nLeft Aligned\n*Center Aligned\n*Right Aligned\n*1:1\n*1:2\n*1:3\n*\n",
+  "invalidDiffChangeset": false,
+  "authorList": {
+    "3095298546": {
+      "authorName": "Alex Hayes",
+      "authorCustomAvatarUrl": "/users/3095298546/avatar"
+    }
+  },
+  "diffAuthorList": {
+    "3095298546": true
+  },
+  "shouldCreateSavepointBeforeApplyingNextRevision": false,
+  "firstKeyRevision": 5,
+  "atext": {
+    "text": "\nLeft Aligned\n*Center Aligned\n*Right Aligned\n*1:1\n*1:2\n*1:3\n*\n\n",
+    "attribs": "*4|1+1*4*5*6*7+c*4*8*9|1+1*a*4*2*3+1*4*5*6*7+e*4*b*9|1+1*c*4*2*3+1*4*5*7+1*4*5*6*7+c*4*d*9|1+1*1*4*2*3+1*4*6*7+3*4*8*e|1+1*a*4*2*3+1*4*6*7+3*4*b*e|1+1*c*4*2*3+1*4*6*7+3*4*d*e|1+1*c*4*2*3+1|2+2",
+    "opCount": 21,
+    "appliedAttribsCount": 67,
+    "maxAttribsOnSingleOp": 4
+  },
+  "pool": {
+    "numToAttrib": {
+      "0": [
+        "author",
+        "a.4fz9s4pIrvcRKF5l"
+      ],
+      "1": [
+        "align",
+        "left"
+      ],
+      "2": [
+        "insertorder",
+        "first"
+      ],
+      "3": [
+        "lmkr",
+        "1"
+      ],
+      "4": [
+        "author",
+        "3095298546"
+      ],
+      "5": [
+        "bold",
+        "true"
+      ],
+      "6": [
+        "font-color-000000",
+        "true"
+      ],
+      "7": [
+        "font-size-medium",
+        "true"
+      ],
+      "8": [
+        "struct-table66e3964d35a14dd5955daccba7df6af2_col8a55817313a5466686e97c6efdc21f32",
+        "true"
+      ],
+      "9": [
+        "struct-table66e3964d35a14dd5955daccba7df6af2_rowc99aa4d521f4432080e3b991361c8c88",
+        "true"
+      ],
+      "10": [
+        "align",
+        "center"
+      ],
+      "11": [
+        "struct-table66e3964d35a14dd5955daccba7df6af2_cole09dca266fae4c0b80e699668778ab10",
+        "true"
+      ],
+      "12": [
+        "align",
+        "right"
+      ],
+      "13": [
+        "struct-table66e3964d35a14dd5955daccba7df6af2_colac4fb7416fc44966a5886df322f79ebc",
+        "true"
+      ],
+      "14": [
+        "struct-table66e3964d35a14dd5955daccba7df6af2_row3d13a40994d44c7ca857d117609d6789",
+        "true"
+      ],
+      "15": [
+        "removed",
+        "true"
+      ]
+    },
+    "nextNum": 16
+  },
+  "chatHead": -1,
+  "publicStatus": false,
+  "passwordHash": null,
+  "savedRevisions": []
+}

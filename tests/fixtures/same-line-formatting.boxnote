@@ -1,0 +1,83 @@
+{
+  "head": 29,
+  "savepointDataFileId": "690977068418",
+  "savepointListObject": {},
+  "lastEditTimestamp": 1594722653948,
+  "diffChangeset": "Z:1>w*4*8*5*6+4*4*5*6+1*4*5*6*9+6*4*5*6+1*4*5*6*a+9|1+1*4*5*6+5*4*5*6*b+4*4|1+1$Bold italic underline\nNext line\n",
+  "invalidDiffChangeset": false,
+  "authorList": {
+    "3095298546": {
+      "authorName": "Alex Hayes",
+      "authorCustomAvatarUrl": "/users/3095298546/avatar"
+    }
+  },
+  "diffAuthorList": {
+    "3095298546": true
+  },
+  "shouldCreateSavepointBeforeApplyingNextRevision": false,
+  "firstKeyRevision": 5,
+  "atext": {
+    "text": "Bold italic underline\nNext line\n\n",
+    "attribs": "*4*8*5*6+4*4*5*6+1*4*5*6*9+6*4*5*6+1*4*5*6*a+9|1+1*4*5*6+5*4*5*6*b+4*4|1+1|1+1",
+    "opCount": 10,
+    "appliedAttribsCount": 26,
+    "maxAttribsOnSingleOp": 4
+  },
+  "pool": {
+    "numToAttrib": {
+      "0": [
+        "author",
+        "a.4fz9s4pIrvcRKF5l"
+      ],
+      "1": [
+        "align",
+        "left"
+      ],
+      "2": [
+        "insertorder",
+        "first"
+      ],
+      "3": [
+        "lmkr",
+        "1"
+      ],
+      "4": [
+        "author",
+        "3095298546"
+      ],
+      "5": [
+        "font-color-000000",
+        "true"
+      ],
+      "6": [
+        "font-size-medium",
+        "true"
+      ],
+      "7": [
+        "removed",
+        "true"
+      ],
+      "8": [
+        "bold",
+        "true"
+      ],
+      "9": [
+        "italic",
+        "true"
+      ],
+      "10": [
+        "underline",
+        "true"
+      ],
+      "11": [
+        "strikethrough",
+        "true"
+      ]
+    },
+    "nextNum": 12
+  },
+  "chatHead": -1,
+  "publicStatus": false,
+  "passwordHash": null,
+  "savedRevisions": []
+}
