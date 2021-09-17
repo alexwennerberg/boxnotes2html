@@ -208,20 +208,20 @@ class BoxNote:
         return output
 
     def as_element_tree(self):
-        html_result = ET.Element("html")
-        body = ET.SubElement(html_result, "body")
+        body = ET.Element("body")
         blobs = self._get_formatted_text_list()
         for blob in blobs:
             body.append(blob.element_tree)
-        return html_result
+        return body
 
     def as_html(self):
+        output = '<!DOCTYPE html><html><head><meta charset="utf-8"/>'
         with open(os.path.join(dir_path, "style.css")) as f:
-            css = "<style>" + f.read() + "</style>"
-        body = ET.tostring(self.as_element_tree(), encoding="unicode").replace(
+            output += "<style>" + f.read() + "</style></head>"
+        output += ET.tostring(self.as_element_tree(), encoding="unicode").replace(
             "&amp;nbsp;", "&nbsp;"
         )
-        return css + body
+        return output + "</html>"
 
     def as_markdown(self):
         """
