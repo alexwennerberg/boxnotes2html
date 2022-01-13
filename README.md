@@ -8,11 +8,21 @@ boxnotes2html is a tool to convert Box Notes to html, markdown or plain text
 
 ![after](img/after.png)
 
-If you or your institution got value out of this script, please consider making a [donation](https://www.buymeacoffee.com/alexwennerberg)! I created and maintain this script for free in my free time.
+If you or your institution got value out of this script, please consider making
+a [donation](https://www.patreon.com/alexwennerberg)! I created and
+maintain this script for free in my free time.
 
 ## Rationale
 
-Box Notes are a proprietary, undocumented format, which makes them difficult to export or move to another service. According to this [support ticket](https://community.box.com/t5/Desktop-and-Mobile-Forum/Exporting-Box-Notes/td-p/14834) the official way in which they meet GDPR compliance is through allowing users to print the notes page as a PDF when it's open in a web browser.  Another option is to Copy/paste the document into LibreOffice, Google Docs, Microsoft Word or some other text-editing program. Neither of these are very attractive options when exporting a large number of Box Notes, say, for archival/backup purposes or in the process of migrating to another platform.
+Box Notes are a proprietary, undocumented format, which makes them difficult to
+export or move to another service. According to this [support
+ticket](https://community.box.com/t5/Desktop-and-Mobile-Forum/Exporting-Box-Notes/td-p/14834)
+the official way in which they meet GDPR compliance is through allowing users
+to print the notes page as a PDF when it's open in a web browser.  Another
+option is to Copy/paste the document into LibreOffice, Google Docs, Microsoft
+Word or some other text-editing program. Neither of these are very attractive
+options when exporting a large number of Box Notes, say, for archival/backup
+purposes or in the process of migrating to another platform.
 
 
 ## Installation
