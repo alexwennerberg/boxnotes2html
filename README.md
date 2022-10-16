@@ -2,6 +2,8 @@
 
 boxnotes2html is a tool to convert Box Notes to html, markdown or plain text
 
+NOTE: Due to changes in the Box Note format, this only works with Box Notes created before August 2022. See [this issue](https://github.com/alexwennerberg/boxnotes2html/issues/3)
+
 ![before](img/before.png)
 
 *to*
